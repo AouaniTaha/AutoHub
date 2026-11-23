@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server" />
+        <module name="Backend" />
+      </profile>
+      <profile name="Annotation profile for Vehicle" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="Vehicle" />
+        <module name="Order" />
+        <module name="Payment" />
+        <module name="Garage" />
+        <module name="User" />
+        <module name="Appointement" />
+        <module name="Listings" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BackEnd" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Appointement" options="-parameters" />
+      <module name="BackEnd" options="-parameters" />
+      <module name="Backend" options="-parameters" />
+      <module name="Garage" options="-parameters" />
+      <module name="Listings" options="-parameters" />
+      <module name="Order" options="-parameters" />
+      <module name="Payment" options="-parameters" />
+      <module name="User" options="-parameters" />
+      <module name="Vehicle" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+    </option>
+  </component>
+</project>
