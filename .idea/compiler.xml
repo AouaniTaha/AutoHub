@@ -9,16 +9,6 @@
         <module name="eureka-server" />
         <module name="Backend" />
       </profile>
-      <profile name="Annotation profile for User" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
-        <module name="User" />
-      </profile>
       <profile name="Annotation profile for Payment" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -26,9 +16,10 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="Order" />
         <module name="Vehicle" />
+        <module name="Order" />
         <module name="Payment" />
+        <module name="User" />
         <module name="Garage" />
         <module name="Appointement" />
         <module name="Listings" />
