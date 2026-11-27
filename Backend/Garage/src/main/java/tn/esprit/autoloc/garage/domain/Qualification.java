@@ -1,5 +1,6 @@
 package tn.esprit.autoloc.garage.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.util.UUID;
 
@@ -15,6 +16,7 @@ public class Qualification {
     private UUID id;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnore
     @JoinColumn(name = "mechanic_id", nullable = false)
     private Mechanic mechanic;
 

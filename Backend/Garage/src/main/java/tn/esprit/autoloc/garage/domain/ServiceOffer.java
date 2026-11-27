@@ -1,5 +1,6 @@
 package tn.esprit.autoloc.garage.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.util.UUID;
@@ -15,6 +16,7 @@ public class ServiceOffer {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "garage_id", nullable = false)
     private Garage garage;

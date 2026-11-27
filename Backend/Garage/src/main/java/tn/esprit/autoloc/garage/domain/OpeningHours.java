@@ -1,5 +1,6 @@
 package tn.esprit.autoloc.garage.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
@@ -17,6 +18,7 @@ public class OpeningHours {
     private UUID id;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnore
     @JoinColumn(name = "garage_id", nullable = false)
     private Garage garage;
 
